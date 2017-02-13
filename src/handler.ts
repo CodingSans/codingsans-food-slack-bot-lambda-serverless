@@ -78,7 +78,7 @@ async function getAviator() {
       throw new Error('No posts today from Aviator');
     }
 
-    const filteredPost = _.filter(result.data, (post) => (/mai/gi).test(post.message));
+    const filteredPost = _.filter(result.data, (post) => (/(mai)|(Ajándék kávé)|(ebéd)|(menü)/gi).test(post.message));
 
     if (!filteredPost.length) {
       throw new Error('No menu posts today from Aviator');
@@ -86,7 +86,7 @@ async function getAviator() {
 
     const maiMenuPost = result.data[0].message;
 
-    const maiMenu = _.filter(maiMenuPost.split('\n'), (s) => /^\s*\~/.test(s)).join('\n');
+    const maiMenu = _.filter(maiMenuPost.split('\n'), (s) => /^\s*(\~)|(\-)/.test(s)).join('\n');
 
     return {
       title: 'Aviator :spaghetti:',
