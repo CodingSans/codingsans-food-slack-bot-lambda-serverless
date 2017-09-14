@@ -49,5 +49,10 @@ export async function getFrukkola() {
     };
   } catch (error) {
     console.log(error);
+    return {
+      title: 'Frukkola :green_apple:',
+      title_link: FRUKKOLA_URL,
+      text: `${error}`,
+    }
   }
 }
