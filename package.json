@@ -10,7 +10,8 @@
   "license": "MIT",
   "scripts": {
     "sls": "sls",
-    "lint": "tslint 'src/**/*.ts'"
+    "lint": "tslint 'src/**/*.ts'",
+    "transpile": "tsc -p src --outDir build"
   },
   "dependencies": {
     "fbgraph": "^1.3.0",
@@ -19,6 +20,7 @@
     "moment": "^2.18.1",
     "moment-timezone": "^0.5.11",
     "request": "^2.79.0",
+    "request-promise": "^4.2.1",
     "slack-node": "^0.1.8",
     "vandium": "^3.3.0"
   },
@@ -27,6 +29,7 @@
     "@types/lodash": "^4.14.48",
     "@types/moment-timezone": "^0.2.34",
     "@types/node": "^6.0.59",
+    "@types/request-promise": "^4.1.37",
     "@types/slack-node": "^0.1.1",
     "serverless": "^1.5.0",
     "serverless-webpack": "^1.0.0-rc.4",
