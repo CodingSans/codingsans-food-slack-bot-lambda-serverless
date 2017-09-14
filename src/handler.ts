@@ -3,9 +3,6 @@
 import * as vandium from 'vandium';
 import * as Slack from 'slack-node';
 
-import { getKamra } from './restaurants/kamra';
-import { getFrukkola } from './restaurants/frukkola';
-
 const SLACK_WEBHOOK = process.env.SLACK_WEBHOOK;
 const FB_ACCESS_TOKEN = process.env.FB_ACCESS_TOKEN;
 const SLACK_CHANNEL = process.env.SLACK_CHANNEL;
@@ -15,6 +12,9 @@ if (!SLACK_WEBHOOK || !SLACK_CHANNEL || !FB_ACCESS_TOKEN) {
   console.error('missing env variables');
   throw new Error('missing env variables');
 }
+
+import { getKamra } from './restaurants/kamra';
+import { getFrukkola } from './restaurants/frukkola';
 
 const slack = new Slack();
 
