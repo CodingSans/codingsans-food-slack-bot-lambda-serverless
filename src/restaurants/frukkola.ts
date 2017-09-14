@@ -53,6 +53,6 @@ export async function getFrukkola() {
       title: 'Frukkola :green_apple:',
       title_link: FRUKKOLA_URL,
       text: `${error}`,
-    }
+    };
   }
 }
