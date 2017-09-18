@@ -3,8 +3,8 @@
 
 
 "@types/bluebird@*":
-  version "3.5.10"
-  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.10.tgz#c4b09b7ffa4b1b2baec2b03eca8618687099acb0"
+  version "3.5.11"
+  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.11.tgz#60482b3cddce9111dee3cafd08ab54fffee4b119"
 
 "@types/form-data@*":
   version "0.0.33"
@@ -23,9 +23,9 @@
     "@types/jquery" "*"
     "@types/node" "*"
 
-"@types/lodash":
-  version "4.14.48"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.48.tgz#d4d7747c28c63581e803bb2d03d0f0f36d2ac624"
+"@types/lodash@^4.14.74":
+  version "4.14.74"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.74.tgz#ac3bd8db988e7f7038e5d22bd76a7ba13f876168"
 
 "@types/moment-timezone":
   version "0.2.34"
@@ -44,14 +44,14 @@
     "@types/bluebird" "*"
     "@types/request" "*"
 
-"@types/request@*":
-  version "0.0.39"
-  resolved "https://registry.yarnpkg.com/@types/request/-/request-0.0.39.tgz#168b96cf4253c5d54d403f746f82ee7aed47ce2c"
+"@types/request@*", "@types/request@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@types/request/-/request-2.0.3.tgz#bdf0fba9488c822f77e97de3dd8fe357b2fb8c06"
   dependencies:
     "@types/form-data" "*"
     "@types/node" "*"
 
-"@types/slack-node":
+"@types/slack-node@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@types/slack-node/-/slack-node-0.1.1.tgz#7d46393b35e2da11c19871114a1798c9b139bdeb"
   dependencies:
@@ -2724,9 +2724,9 @@ type-is@~1.6.13:
     media-typer "0.3.0"
     mime-types "~2.1.13"
 
-typescript:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.4.tgz#b53b69fb841126acb1dd4b397d21daba87572251"
+typescript@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.5.2.tgz#038a95f7d9bbb420b1bf35ba31d4c5c1dd3ffe34"
 
 uglify-js@~2.7.3:
   version "2.7.5"

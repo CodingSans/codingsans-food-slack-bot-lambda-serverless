@@ -23,7 +23,7 @@ slack.setWebhook(SLACK_WEBHOOK);
 
 function slackWebhook(options: Slack.WebhookOptions) {
   return new Promise((resolve, reject) => {
-    slack.webhook(options, (err, result: Slack.WebhookResponse) => {
+    slack.webhook(options, (err: Error, result: Slack.WebhookResponse) => {
       if (err) {
         return reject(err);
       }
