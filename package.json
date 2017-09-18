@@ -11,7 +11,7 @@
   "scripts": {
     "sls": "sls",
     "lint": "tslint 'src/**/*.ts'",
-    "transpile": "tsc -p src --outDir build",
+    "transpile": "tsc --rootDir src --outDir build",
     "devDeploy": "sls deploy --stage dev",
     "codingsansDeploy": "sls deploy --stage codingsans"
   },
