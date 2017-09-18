@@ -16,7 +16,7 @@
   version "2.0.39"
   resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-2.0.39.tgz#917fe65300dbc6ccbdfa7e2ee51159fbd29d7689"
 
-"@types/jsdom":
+"@types/jsdom@^2.0.29":
   version "2.0.29"
   resolved "https://registry.yarnpkg.com/@types/jsdom/-/jsdom-2.0.29.tgz#b4efaa56b24b8b14a5f435a4badc6770bd0f8755"
   dependencies:

@@ -15,6 +15,7 @@ if (!SLACK_WEBHOOK || !SLACK_CHANNEL || !FB_ACCESS_TOKEN) {
 
 import { getKamra } from './restaurants/kamra';
 import { getFrukkola } from './restaurants/frukkola';
+import { getCafeMayer } from './restaurants/cafeMayer';
 import { getBudapestBisztro } from './restaurants/budapestBistro';
 
 const slack = new Slack();
@@ -37,6 +38,7 @@ export const food = vandium(async function food(): Promise<any> {
     getKamra(),
     getFrukkola(),
     getBudapestBisztro(),
+    getCafeMayer(),
   ]);
 
   await slackWebhook({
