@@ -11,7 +11,9 @@
   "scripts": {
     "sls": "sls",
     "lint": "tslint 'src/**/*.ts'",
-    "transpile": "tsc -p src --outDir build"
+    "transpile": "tsc -p src --outDir build",
+    "devDeploy": "sls deploy --stage dev",
+    "codingsansDeploy": "sls deploy --stage codingsans"
   },
   "dependencies": {
     "fbgraph": "^1.3.0",
@@ -32,9 +34,9 @@
     "@types/request": "^2.0.3",
     "@types/request-promise": "^4.1.37",
     "@types/slack-node": "^0.1.1",
+    "awesome-typescript-loader": "^3.2.3",
     "serverless": "^1.5.0",
     "serverless-webpack": "^1.0.0-rc.4",
-    "ts-loader": "^1.3.3",
     "tslint": "^4.3.1",
     "tslint-config-olo": "^0.1.0",
     "typescript": "^2.5.2",
