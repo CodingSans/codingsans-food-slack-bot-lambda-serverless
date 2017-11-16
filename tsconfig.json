@@ -19,15 +19,12 @@
     ]
   },
   "include": [
-    "./**/*.ts"
+    "src/**/*.ts"
   ],
   "atom": {
     "rewriteTsconfig": false,
     "formatOnSave": false
   },
-  "filesGlob": [
-    "./**/*.ts"
-  ],
   "compileOnSave": false,
   "buildOnSave": false
 }
