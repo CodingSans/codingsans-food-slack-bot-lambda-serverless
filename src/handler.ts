@@ -6,7 +6,7 @@ import * as Slack from 'slack-node';
 const SLACK_WEBHOOK = process.env.SLACK_WEBHOOK;
 const FB_ACCESS_TOKEN = process.env.FB_ACCESS_TOKEN;
 const SLACK_CHANNEL = process.env.SLACK_CHANNEL;
-const ICONS = [':hamburger:', ':hotdog:', ':pizza:', ':taco:', ':burrito:', ':ramen:', ':stew:', ':curry:'];
+const ICONS = [':hamburger:', ':hotdog:', ':pizza:', ':taco:', ':burrito:', ':ramen:', ':stew:', ':curry:', ':pogchamp:'];
 
 if (!SLACK_WEBHOOK || !SLACK_CHANNEL || !FB_ACCESS_TOKEN) {
   console.error('missing env variables');
