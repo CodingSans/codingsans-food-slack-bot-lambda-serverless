@@ -24,7 +24,6 @@ export async function getAurum() {
     const response = await request(AURUM_URL);
     const $ = cheerio.load(response);
     cheerioTableparser($);
-    console.log(response, $(AURUM_SELECTOR));
     const table = ($(AURUM_SELECTOR) as any).parsetable(true, true, true);
     const parsedText = parseText(table[1]);
     return {
