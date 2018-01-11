@@ -16,8 +16,8 @@ function parseText(textParts: string[]) {
   const menu = getMenuForToday(textParts, dayOfWeek);
   return menu + " - 1290.-Ft";
 }
-var AURUM_URL = 'http://aurumbistro.hu/?page_id=274';
-var AURUM_SELECTOR = '.etlaptabla';
+const AURUM_URL = 'http://aurumbistro.hu/?page_id=274';
+const AURUM_SELECTOR = '.etlaptabla';
 
 export async function getAurum() {
   try {
