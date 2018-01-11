@@ -46,13 +46,13 @@ export async function getNemSuti() {
     const parsedText = parseText(text);
 
     return {
-      title: 'Nemsüti Bisztró :meat_on_bone:',
+      title: 'Nemsüti Bisztró :cake:',
       title_link: NSBISTRO_URL,
       text: parsedText,
     };
   } catch (err) {
     return {
-      title: 'Nemsüti Bisztró :meat_on_bone:',
+      title: 'Nemsüti Bisztró :cake:',
       title_link: NSBISTRO_URL,
       text: `${ err }`,
     };
