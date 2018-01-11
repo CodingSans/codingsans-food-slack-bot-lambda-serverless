@@ -33,7 +33,7 @@ export async function getFarger() {
     };
   } catch (err) {
     return {
-      title: 'Farger :sweet_potato:',
+      title: 'Farger :ripepperonis:',
       title_link: FARGER_URL,
       text: '' + err,
     };

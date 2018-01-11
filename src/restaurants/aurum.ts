@@ -33,7 +33,7 @@ export async function getAurum() {
     };
   } catch (err) {
     return {
-      title: 'AurumBistro :wine_glass:',
+      title: 'AurumBistro :ripepperonis:',
       title_link: AURUM_URL,
       text: '' + err,
     };

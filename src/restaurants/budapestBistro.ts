@@ -44,7 +44,7 @@ export async function getBudapestBisztro() {
     };
   } catch (err) {
     return {
-      title: 'Budapest Bisztró :meat_on_bone:',
+      title: 'Budapest Bisztró :ripepperonis:',
       title_link: BBISTRO_URL,
       text: `${ err }`,
     };

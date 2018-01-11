@@ -52,7 +52,7 @@ export async function getNemSuti() {
     };
   } catch (err) {
     return {
-      title: 'Nemsüti Bisztró :cake:',
+      title: 'Nemsüti Bisztró :ripepperonis:',
       title_link: NSBISTRO_URL,
       text: `${ err }`,
     };

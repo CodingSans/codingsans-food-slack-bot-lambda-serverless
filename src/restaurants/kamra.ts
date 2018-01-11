@@ -22,7 +22,7 @@ export async function getKamra() {
   } catch (err) {
     console.error('getKamra error', err);
     return {
-      title: 'Kamra :rice:',
+      title: 'Kamra :ripepperonis:',
       title_link: KAMRA_URL,
       text: `${ err }`,
     };

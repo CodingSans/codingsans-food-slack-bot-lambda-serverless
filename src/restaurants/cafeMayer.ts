@@ -55,7 +55,7 @@ export async function getCafeMayer() {
     };
   } catch (err) {
     return {
-      title: 'CafeMayer :coffee:',
+      title: 'CafeMayer :ripepperonis:',
       title_link: MAYER_URL,
       text: `${ err }`,
     };

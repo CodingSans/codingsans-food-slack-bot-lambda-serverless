@@ -40,7 +40,7 @@ export async function getGreyGoose() {
     };
   } catch (err) {
     return {
-      title: 'Grey Goose :tomato:',
+      title: 'Grey Goose :ripepperonis:',
       title_link: GOOSE_URL,
       text: '' + err,
     };
