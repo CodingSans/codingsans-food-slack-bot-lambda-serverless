@@ -38,9 +38,9 @@ export async function getFrukkola() {
 
     const response: IFrukkolaResponse = await request(options);
     const aranyMenu = response[ARANY_ID];
-    const text_hu = `${aranyMenu.soup_hu} (${response.pricing.soup}), ` +
-    `${aranyMenu.dish_hu} (${response.pricing.dish}) ` +
-    `- ${response.pricing.combo}.- Ft`;
+    const text_hu = `${aranyMenu.soup_hu} (${response.pricing.soup}), \n` +
+    `${aranyMenu.dish_hu} (${response.pricing.dish}) \n` +
+    `${response.pricing.combo}.- Ft`;
 
     return {
       title: 'Frukkola :green_apple:',
