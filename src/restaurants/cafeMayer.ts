@@ -17,7 +17,7 @@ function getMenuForToday(parts: string[], day: string) {
   const dish2 = parts[dayIndex + 3];
   const dessert = parts[dayIndex + 4];
 
-  return `${soup}, ${dish1}${dish2}, ${dessert}`;
+  return `${soup}\n ${dish1}${dish2}\n ${dessert}\n`;
 }
 
 function parseText(text: string) {
@@ -29,7 +29,7 @@ function parseText(text: string) {
 
   const menu = getMenuForToday(textParts, today);
 
-  return `${menu} - 1440.-Ft`;
+  return `${menu}1440.-Ft`;
 }
 
 const MAYER_URL = 'http://www.cafemayer.hu/';
