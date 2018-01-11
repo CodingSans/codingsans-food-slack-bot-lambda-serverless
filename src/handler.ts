@@ -17,6 +17,10 @@ import { getKamra } from './restaurants/kamra';
 import { getFrukkola } from './restaurants/frukkola';
 import { getCafeMayer } from './restaurants/cafeMayer';
 import { getBudapestBisztro } from './restaurants/budapestBistro';
+import { getAurum } from './restaurants/aurum';
+import { getGreyGoose } from './restaurants/greyGoose';
+import { getFarger } from './restaurants/farger';
+import { getNemSuti } from './restaurants/nemsutiBistro';
 
 const slack = new Slack();
 
@@ -37,8 +41,12 @@ export const food = vandium(async function food(): Promise<any> {
   const attachments = await Promise.all([
     getKamra(),
     getFrukkola(),
-    getBudapestBisztro(),
     getCafeMayer(),
+    getBudapestBisztro(),
+    getAurum(),
+    getGreyGoose(),
+    getFarger(),
+    getNemSuti()
   ]);
 
   await slackWebhook({
