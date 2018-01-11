@@ -16,18 +16,12 @@ function getDailyOffer(text: string, dayIndex: number): string[] {
     .filter((element, index) => index !== 0 && element.length > 3);
 }
 
-function getPrice(text: string): string {
-  const currencyIndex = text.indexOf('Ft');
-  return text.slice(currencyIndex - 5, currencyIndex + 2);
-}
-
 function parseText(text: string) {
   const dayOfWeek = moment().day();
   const menu = getMenuForToday(text, dayOfWeek);
+  const price = '1550.-Ft';
 
-  const price = getPrice(text);
-
-  return `${menu} - ${price}`;
+  return `${menu} \n ${price}`;
 }
 
 export async function getBudapestBisztro() {
