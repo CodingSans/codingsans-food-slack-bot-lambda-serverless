@@ -8,6 +8,7 @@ provider:
 
 plugins:
   - serverless-webpack
+  - loadEnv
 
 custom:
   webpack: ./webpack.config.js
@@ -23,3 +24,4 @@ functions:
     events:
       - schedule: ${file(./scripts/serverless.config.js):schedule.CET11}
       - http: GET food
+    timeout: 20
